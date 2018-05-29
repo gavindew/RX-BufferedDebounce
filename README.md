@@ -19,7 +19,7 @@ public static IObservable<IList<T>> BufferedDebounce<T>(
 *Example*
 ```C#
     observable
-		.BufferedDebounce(TimeSpan.FromSeconds(1), TimeSpan.FromSeconds(5))
-		.Subscribe(x => { Console.WriteLine(string.Join(",", x)); });
+	.BufferedDebounce(TimeSpan.FromSeconds(1), TimeSpan.FromSeconds(5))
+	.Subscribe(x => { Console.WriteLine(string.Join(",", x)); });
 
 ```
